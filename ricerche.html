@@ -1,0 +1,81 @@
+<?php
+	session_start();
+	include 'definizioni.php';
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Praticare il futuro - Ricerche</title>
+
+  <link type="text/css" rel="stylesheet" href="praticare.php">
+
+  </head>
+<body>
+	<div class="header">
+		<h1>PRATICARE IL FUTURO</h1>
+		<h2>Ricerche</h2>
+	</div>
+
+	<div class="toolbar">
+	
+		<div class="gotomain"><a href ="index.html">Torna alla pagina iniziale</a></div>
+		
+		<div class="end"><a href ="end.html">Esci</a></div>
+	</div>
+
+	<div class="form">
+		<form method="post" action="ricerche11.php">
+		RICERCHE
+		<br />
+		<br />
+		<br />
+		Criterio di ricerca
+		<br />
+		<br />
+		<div class="form_indent">
+			<span class="testo"><label for="Stato_Attivita">Attivita</label></span>
+			<span class="campo"><input type="text" id="Stato_Attivita" name="Stato_Attivita" /></span>
+			<br />
+			<br />
+			<span class="testo"><label for="Contatto"> Contatto</label></span>
+			<span class="campo"><input type="text" id="Contatto" name="Contatto" /></span>
+			<br />
+			<br />
+			<span class="testo"><label for="Cognome_Referente">Referente</label></span>
+			<span class="campo"><input type="text" id="Cognome_Referente" name="Cognome_Referente" /></span>
+			<br />
+			<br />
+			<span class="testo"><label for="Cognome_Bambino">  Bambino</label></span>
+			<span class="campo"><input type="text" id="Cognome_Bambino" name="Cognome_Bambino" /></span>
+		</div>
+		<br />
+		<br />
+		<br />
+		Ordine:
+		<br />
+		<div class="form_indent">
+			Cronologico<input name="Ordine_Cronologico" type="checkbox" checked="checked"/>
+			Alfabetico<input name="Ordine_Alfabetico" type="checkbox" />
+			<br />
+			Crescente <input id="Ordine_Sort" name="Ordine_Sort" type="radio" value="CRESCENTE" checked="checked"/>
+			Decrescente <input id="Ordine_Sort" name="Ordine_Sort" type="radio" value="DECRESCENTE"/>
+		</div>
+		<br />
+		Dettaglio:
+		<br />
+		<div class="form_indent">
+			Sintesi <input id="Dettaglio" name="Dettaglio" type="radio" value="SINTESI"/>
+			Completo <input id="Dettaglio" name="Dettaglio" type="radio" checked="checked" value="COMPLETO"/>
+		</div>
+		<br />
+		<br />
+		PIVOT <input id="Pivot" name="Pivot" type="radio" value="PIVOT"/>
+		<br />
+		<br />
+		<br />
+		<input type="submit" value="Ricerca" name="submit" />
+		</form>
+  	</div>
+</body>
+</html>

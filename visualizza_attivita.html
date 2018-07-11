@@ -1,0 +1,61 @@
+<?php
+	include 'definizioni.php';
+?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Praticare il futuro - Visualizza Attivita'</title>
+
+  <link type="text/css" rel="stylesheet" href="praticare.php">
+
+  </head>
+<body>
+	<div class="header">
+		<h1>PRATICARE IL FUTURO</h1>
+		<h2>Visualizza Attivita'</h2>
+	</div>
+
+	<div class="toolbar">
+	
+		<div class="firstoption"><a href ="gestione_attivita.html">Torna alla gestione attivita'</a>
+
+		<div class="gotomain"><a href ="index.html">Torna alla pagina iniziale</a></div>
+		
+		<div class="end"><a href ="end.html">Esci</a></div>
+
+	</div>
+
+
+
+	<div class="form">
+		<form method="post" action="visualizza_attivita.php">
+		VISUALIZZAZIONE STATO ATTIVITA'
+		<br />
+		<br />
+		<br />
+		<div class="form_indent">
+			<span class="testo"><label for="Nome_Attivita">Nome Attivita'</label></span>
+			<span class="campo"><input type="text" id="Nome_Attivita" name="Nome_Attivita" /></span>
+		</div>
+		<br />
+		<br />
+		<br />
+		Stato Attivita'
+		<br />
+		<br />
+		<div class="form_indent">
+			Attive<input name="Stato" type="Radio"/>
+			Inattive<input name="Stato" type="Radio"/>
+			Tutte<input name="Stato" type="Radio" checked="checked"/>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<input type="submit" value="Visualizza Attivita" name="submit" />
+		</form>
+  	</div>
+</body>
+</html>

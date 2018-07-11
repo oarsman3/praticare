@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Praticare il futuro - Cancella Bambino</title>
+
+  <link type="text/css" rel="stylesheet" href="praticare.php">
+
+  </head>
+	<body>
+	<div class="header">
+		<h1>PRATICARE IL FUTURO</h1>
+		<h2>Cancella Bambino</h2>
+	</div>
+	
+	<div class="toolbar">
+	
+		<div class="firstoption"><a href = "gestione_anagrafiche.html">Torna a Gestione Anagrafiche</a></div>
+
+		<div class="gotomain"><a href ="index.html">Torna alla pagina iniziale</a></div>
+		
+		<div class="end"><a href ="end.html">Esci</a></div>
+		
+	</div>
+
+	<div class="form">
+	<form method="post" action="cancella_bambino.php">
+
+		CANCELLA BAMBINO
+		<br />
+		<br />
+		<br />
+		Dati Bambino da cancellare
+		<br />
+		<br />
+		<div class="form_indent">
+			<span class="testo"><label for="Nome">Nome</label></span>
+			<span class="campo"><input type="text" id="Nome" name="Nome" /></span>
+			<br/>
+			<br/>
+			<span class="testo"><label for="Cognome">Cognome</label></span>
+			<span class="campo"><input type="text" id="Cognome" name="Cognome" /></span>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<input type="submit" value="Cancella Bambino" name="submit" />
+	</form>
+	</div>
+</body>
+</html>

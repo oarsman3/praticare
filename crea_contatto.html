@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Praticare il futuro - Crea Contatto</title>
+
+  <link type="text/css" rel="stylesheet" href="praticare.php">
+
+  </head>
+	<body>
+	<div class="header">
+		<h1>PRATICARE IL FUTURO</h1>
+		<h2>Crea Contatto</h2>
+	</div>
+	
+	<div class="toolbar">
+	
+		<div class="firstoption"><a href = "gestione_anagrafiche.html">Torna a Gestione Anagrafiche</a></div>
+
+		<div class="gotomain"><a href ="index.html">Torna alla pagina iniziale</a></div>
+		
+		<div class="end"><a href ="end.html">Esci</a></div>
+		
+	</div>
+
+	<div class="form">
+	<form method="post" action="crea_contatto.php">
+
+		CREA CONTATTO
+		<br />
+		<br />
+		<br />
+		Dati Contatto
+		<br />
+		<br />
+		<div class="form_indent">
+			<span class="testo"><label for="Identificativo">Identificativo</label></span>
+			<span class="campo"><input type="text" id="Identificativo" name="Identificativo" /></span>
+			<br />
+			<br />
+			Famiglia <input id="Tipologia" name="Tipologia" type="radio" value="Famiglia" />
+			Associazione <input id="Tipologia" name="Tipologia" type="radio" value="Associazione"/>
+			Scuola <input id="Tipologia" name="Tipologia" type="radio" value="Scuola" />
+			<br/>
+			<br/>
+			Cliente<input name="Cliente" type="checkbox" />
+			<br/>
+			<br/>
+			<span class="testo"><label for="Note">Note</label></span>
+			<span class="campo"><textarea id="Note" name="Note"></textarea></span>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<input type="submit" value="Crea Contatto" name="submit" />
+	</form>
+	</div>
+</body>
+</html>
